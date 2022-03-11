@@ -35,8 +35,8 @@ ball.shape("square")
 ball.color("white")
 ball.penup()
 ball.goto(0, 0)
-ball.dx = 2
-ball.dy = -2
+ball.dx = 2.5
+ball.dy = -2.5
 
 # Pen
 pen = turtle.Turtle()
@@ -54,25 +54,25 @@ pen.write("Player A: 0  Player B: 0", align="center",
 
 def paddle_a_up():
     y = paddle_a.ycor()
-    y += 20
+    y += 30
     paddle_a.sety(y)
 
 
 def paddle_a_down():
     y = paddle_a.ycor()
-    y -= 20
+    y -= 30
     paddle_a.sety(y)
 
 
 def paddle_b_up():
     y = paddle_b.ycor()
-    y += 20
+    y += 30
     paddle_b.sety(y)
 
 
 def paddle_b_down():
     y = paddle_b.ycor()
-    y -= 20
+    y -= 30
     paddle_b.sety(y)
 
 
